@@ -7,7 +7,7 @@ from sequence_two_d import *
 
 def main():
     # loading bar
-    loader = loading_bar(char="█", size=10, delay=0.1, percentage=True, percentage_sep=" ", percentage_ndigits=1)
+    loader = loading_bar(char="█", size=10, delay=0.1, percentage=True, percentage_sep=" ", percentage_ndigits=1, complete_bar=True, complete_symbol=".")
     loader.display()
 
     # one dimensional sequence
