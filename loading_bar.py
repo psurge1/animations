@@ -21,7 +21,3 @@ class loading_bar:
                 ending = "\n"
             print(self.char*i, msg, sep=self.percentage_sep, end=ending)
             time.sleep(self.delay)
-
-if __name__ == '__main__':
-    loader = loading_bar(char="█", size=10, delay=0.1, percentage=True, percentage_sep=" ", percentage_ndigits=1)
-    loader.display_loading_bar()
