@@ -10,7 +10,7 @@ class loading_bar:
         self.percentage_sep = percentage_sep
         self.percentage_ndigits = percentage_ndigits
 
-    def display_loading_bar(self):
+    def display(self):
         ending = ""
         self.percentage_ndigits = None if self.percentage_ndigits == 0 else self.percentage_ndigits
         for i in range(self.size+1):
