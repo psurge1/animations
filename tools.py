@@ -5,3 +5,21 @@ def set_digits(num, ndigits):
                 num+="0"
             return num
     return num
+
+def array_to_string(arr, nl=False):
+    s = ""
+    for i in arr:
+        s+=i
+        if nl:
+            s+='\n'
+    return s
+
+def matrix_to_string(matrix, midnl=False, endnl = False):
+    s = ""
+    for arr in matrix:
+        for i in arr:
+            s+=i
+            if midnl:
+                s+='\n'
+        if endnl:
+            s+='\n'
