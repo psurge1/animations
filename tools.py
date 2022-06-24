@@ -1,4 +1,4 @@
-def set_digits(num, ndigits):
+def set_digits(num: str, ndigits: int) -> str:
     for i in range(len(num)-1, -1, -1):
         if num[i]==".":
             for k in range(ndigits-(len(num)-i-1)):
@@ -6,7 +6,7 @@ def set_digits(num, ndigits):
             return num
     return num
 
-def array_to_string(arr, nl=False):
+def array_to_string(arr: list, nl=False) -> str:
     s = ""
     for i in arr:
         s+=i
@@ -14,7 +14,7 @@ def array_to_string(arr, nl=False):
             s+='\n'
     return s
 
-def matrix_to_string(matrix, midnl=False, endnl = False):
+def matrix_to_string(matrix: list, midnl=False, endnl = False) -> str:
     s = ""
     for arr in matrix:
         for i in arr:

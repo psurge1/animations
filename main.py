@@ -1,6 +1,3 @@
-from msilib import sequence
-
-from numpy import matrix
 from loading_bar import *
 from sequence_one_d import *
 from sequence_two_d import *
